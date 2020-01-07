@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.6;
+	background: #fff;
+	color: #3a3a3a;
+	display: flex;
+  flex-direction: column;
+}
+/* =================================
+  Base Styles
+==================================== */
+
+/* Layout Styles */
+
+.header-wrapper {
+	width: 100%;
+	position: fixed;
+	background: #fff;
+}
+.main-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.logo-wrapper {
+	padding-top: .5em;
+}
+#header-img {
+	max-width: 250px;
+}
+#nav-bar,
+.nav-wrapper {
+	width: 100%;
+}
+.main-nav {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	background: #fff;
+}
+.main-nav a {
+	display: block;
+	font-size: 1em;
+	font-weight: 600;
+	letter-spacing: .2em;
+	padding: 15px 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	color: #2e8b57;
+	transition-duration: .3s;
+	transition-property: color;
+}
+.main-nav a:hover {
+	color: #20603b;
+}
+
+/* ---- Page Elements ---- */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.row {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.banner {
+	background: url(../img/folliage-banner.jpg) center no-repeat;
+	background-size: 100%;
+	height: 625px;
+	color: #fff;
+}
+.subscribe-wrapper {
+	height: 625px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.subscribe {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(51,153,102,.65);
+	color: #fff;
+	margin: 1em;
+}
+.subscribe h3 {
+	font-size: 1em;
+	font-weight: 400;
+	padding-top: .75em;
+	text-align: center;
+}
+.subscribe p {
+	text-align: left;
+	padding: .75em;
+	font-size: 1em;
+	font-weight: 400;
+}
+input {
+	width: 250px;
+	padding: .5em;
+  font-size: .9em;
+  padding: .75em;
+  letter-spacing: .03em;
+	margin: 0 auto;
+	border: none;
+}
+#submit {
+	background: #339966;
+	color: #a7d7c5;
+	font-size: 1em;
+	padding: 1em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	cursor: pointer;
+	transition-duration: .3s;
+	transition-property: color;
+}
+#submit:hover,
+#submit:active {
+	color: #fff;
+}
+.col {
+	width: 100%;
+	margin: auto;
+}
+#our-club h1,
+#plant-diaries h1,
+#shop h1 {
+	font-size: 2em;
+	color: #339966;
+	padding: 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+#plant-diaries h1 {
+	padding: 0 0 1em;
+}
+.intro {
+	width: 100%;
+	padding: 2em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.content {
+	width: 80%;
+	max-width: 400px;
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.content-icon {
+	color: #339966;
+	padding-bottom: 2em;
+	align-self: center;
+}
+.content h2 {
+	text-align: center;
+	color: #339966;
+	padding-bottom: 2em;
+	font-size: 1.25em;
+}
+.content p {
+	text-align: left;
+}
+.video-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+#video {
+	width: 100%;
+	max-width: 1120px;
+	min-height: 315px;
+	margin: 0 auto;
+}
+.our-club,
+.shop {
+	padding: 5em 0;
+}
+.category {
+	background: url('../img/plant.jpg') center no-repeat;
+	background-size: cover;
+	background-color: #339966;
+	background-blend-mode: soft-light;
+	width: 80%;
+	max-width: 400px;
+	height: 400px;
+	margin: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.category a {
+	color: #fff;
+	text-decoration: none;
+	transition-duration: .3s;
+	transition-property: background;
+}
+.category a:link,
+.category a:visited {
+	background-color: rgba(51,153,102,.5);
+}
+.category h2 {
+	font-size: 1.5em;
+	padding: 1em 0;
+}
+.category a:hover,
+.category a:active {
+	background-color: rgba(51,153,102,1);
+}
+
+/* ---- Footer ---- */
+
+.footer-wrapper {
+	background: #339966;
+	width: 100%;
+}
+.main-footer {
+	margin: 0 auto;
+	padding: 1em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
+  color: #a7d7c5;
+  text-align: center;
+}
+.copyright {
+	display: block;
+	text-align: center;
+	font-size: .9em;
+	letter-spacing: .05em;
+	font-weight: 300;
+	font-weight: 400;
+}
+.social-icons {
+	display: flex;
+	justify-content: center;
+	margin: 0.25em 0;
+}
+.icon {
+	font-size: 1.5em;
+  padding: .5em;
+	transition-duration: .3s;
+	transition-property: color;
+}
+.icon,
+.icon:visited {
+	color: #a7d7c5;
+}
+.icon:hover,
+.icon:active {
+  color: #fff;
+}
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.main-footer {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.main-header {
+		color: #2e8b57;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.main-nav {
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.container {
+		margin-top: 4em;
+	}
+	.video-wrapper {
+		padding-bottom: 3em;
+	}
+	.main-footer  {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: .5em;
+	}
+	.copyright {
+		order: -1;
+	}
+}
+
+@media (min-width: 880px) {
+	.col {
+		width: 90%;
+	}
+	.subscribe-wrapper {
+		flex-direction: ;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.subscribe {
+		width: 250px;
+		justify-content: center;
+		align-items: center;
+	}
+	.subscribe {
+		margin: 0;
+	}
+	.wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2em 0;
+	}
+	.content {
+		margin: 0;
+		height: 400px;
+	}
+	.category {
+		width: 30%;
+		height: 400px;
+		margin: 0;
+	}
+	.light,
+	.new-arrivals {
+		margin-right: 1em;
+	}
+	.water,
+	.featured {
+		margin: 0 1em;
+	}
+	.pets,
+	.sale {
+		margin-left: 1em;
+	}
+	#video {
+		height: 472.5px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.main-header,
+	.col,
+  .main-footer {
+		max-width: 1120px;
+	}
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#our-club {
+		max-width: 100%;
+	}
+	#video {
+		height: 630px;
+	}
+}
